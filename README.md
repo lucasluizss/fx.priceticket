@@ -49,9 +49,14 @@ const addPrice = () => {
     const currencies = ['BRA/USD', 'GBP/USD', 'EUR/USD'];
 
     const randomCurrency = Math.floor(Math.random() * currencies.length)
-    const randomCurrencyValue = Math.floor((Math.random() * 6) + 1);
+    const randomCurrencyValue = () => Math.round(((Math.random() * 6) + 1) * 20) / 20;
 
-    const raw = JSON.stringify({"instrument": currencies[randomCurrency] ,"bid":2.1,"ask":1.2,"date": new Date() });
+    const raw = JSON.stringify({
+      "instrument": currencies[randomCurrency],
+      "bid": randomCurrencyValue(),
+      "ask": randomCurrencyValue(),
+      "date": new Date() 
+    });
 
     const requestOptions = {
       method: 'POST',
