@@ -1,4 +1,4 @@
-# FX Price Ticke
+# FX Price Ticket
 
 *FX Price Ticke __real time__!*
 
