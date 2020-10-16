@@ -1,6 +1,6 @@
 # FX Price Ticket
 
-*FX Price Ticke __real time__!*
+*FX Price Ticket __real time__!*
 
 ## Installation
 
